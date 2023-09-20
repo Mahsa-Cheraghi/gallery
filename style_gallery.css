@@ -1,0 +1,81 @@
+body {
+  direction: rtl;
+}
+[class*="col-"] {
+  box-sizing: border-box;
+}
+.button {
+  margin-right: 35%;
+  margin-left: 35%;
+  border: 1px solid rgb(213, 229, 243);
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+}
+input[type="button"] {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.active,
+.sub:hover {
+  background-color: rgb(115, 115, 187);
+}
+
+.img {
+  /* padding: 0px !important; */
+
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  background-color: black;
+}
+.mySlides img {
+  width: 100%;
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  max-width: 1000px;
+}
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(207, 28, 28);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.next {
+  right: 0;
+}
+.prev {
+  left: 0;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>gallery</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style_gallery.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="button">
+        <input
+          type="button"
+          class="sub active"
+          onclick="Slide(1)"
+          type="submit"
+          value="همه"
+        />
+        <input
+          type="button"
+          class="sub"
+          onclick="Slide(2)"
+          type="submit"
+          value="درمانی"
+        />
+        <input
+          type="button"
+          class="sub"
+          onclick="Slide(3)"
+          type="submit"
+          value="سیاحتی"
+        />
+        <input
+          type="button"
+          class="sub"
+          onclick="Slide(4)"
+          type="submit"
+          value="زیارتی"
+        />
+      </div>
+      <br />
+      <div class="gallery">
+        <div class="row">
+          <img
+            src="img/1-blog_4.jpg"
+            onclick="openModal();currentSlide(1)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/2-blog_3.jpg"
+            onclick="openModal();currentSlide(2)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/3-blog.jpg"
+            onclick="openModal();currentSlide(3)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/4-blog.jpg"
+            onclick="openModal();currentSlide(4)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="img/5.jpg"
+            onclick="openModal();currentSlide(5)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/6.jpg"
+            onclick="openModal();currentSlide(6)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/7.jpg"
+            onclick="openModal();currentSlide(7)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+          <img
+            src="img/8.jpg"
+            onclick="openModal();currentSlide(8)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="row">
+          <img
+            src="img/5.jpg"
+            onclick="openModal();currentSlide(5)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/6.jpg"
+            onclick="openModal();currentSlide(6)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/7.jpg"
+            onclick="openModal();currentSlide(7)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+          <img
+            src="img/8.jpg"
+            onclick="openModal();currentSlide(8)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="row">
+          <img
+            src="img/1-blog_4.jpg"
+            onclick="openModal();currentSlide(1)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/2-blog_3.jpg"
+            onclick="openModal();currentSlide(2)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/3-blog.jpg"
+            onclick="openModal();currentSlide(3)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+
+          <img
+            src="img/4-blog.jpg"
+            onclick="openModal();currentSlide(4)"
+            class="img p-1 col-lg-3 col-md-5 col-sm-12"
+          />
+        </div>
+      </div>
+      <div class="gallery"></div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <img src="img/1-blog_4.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <img src="img/2-blog_3.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <img src="img/3-blog.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <img src="img/4-blog.jpg" />
+        </div>
+        <div class="mySlides">
+          <img src="img/5.jpg" />
+        </div>
+        <div class="mySlides">
+          <img src="img/6.jpg" />
+        </div>
+        <div class="mySlides">
+          <img src="img/7.jpg" />
+        </div>
+        <div class="mySlides">
+          <img src="img/8.jpg" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(1)">&#10095;</a>
+        <a class="next" onclick="plusSlides(-1)">&#10094;</a>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>
